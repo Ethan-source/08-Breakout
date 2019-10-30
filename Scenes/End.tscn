@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/OstrichSans-Heavy.otf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[node name="Game Over" type="Node2D"]
+position = Vector2( 436.314, 248.884 )
+
+[node name="Message" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Message"]
+margin_left = -67.46
+margin_top = -4.0
+margin_right = 264.54
+margin_bottom = 104.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="Message"]
+margin_left = 3.07269
+margin_top = 35.8475
+margin_right = 195.073
+margin_bottom = 62.8475
+custom_fonts/font = SubResource( 1 )
+text = "Nice try Loser"
+align = 1
